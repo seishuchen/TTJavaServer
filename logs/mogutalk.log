@@ -1,0 +1,254 @@
+13:51:49.764 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+org.apache.commons.httpclient.ConnectTimeoutException: The host did not accept the connection within timeout of 500 ms
+	at org.apache.commons.httpclient.protocol.ReflectionSocketFactory.createSocket(ReflectionSocketFactory.java:155) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:125) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:203) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.6.0_65]
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:382) ~[na:1.6.0_65]
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:241) ~[na:1.6.0_65]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:228) ~[na:1.6.0_65]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:431) ~[na:1.6.0_65]
+	at java.net.Socket.connect(Socket.java:527) ~[na:1.6.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.6.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) ~[na:1.6.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) ~[na:1.6.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:597) ~[na:1.6.0_65]
+	at org.apache.commons.httpclient.protocol.ReflectionSocketFactory.createSocket(ReflectionSocketFactory.java:140) ~[commons-httpclient-3.1.jar:na]
+	... 8 common frames omitted
+13:54:56.655 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+13:54:56.660 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+13:55:45.638 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+13:55:45.638 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+13:55:50.674 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237) ~[na:1.6.0_65]
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:203) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:01:01.080 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:01:01.087 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:01:02.964 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237) ~[na:1.6.0_65]
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:203) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:03:23.696 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:03:23.702 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:03:23.741 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.6.0_65]
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:382) ~[na:1.6.0_65]
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:241) ~[na:1.6.0_65]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:228) ~[na:1.6.0_65]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:431) ~[na:1.6.0_65]
+	at java.net.Socket.connect(Socket.java:527) ~[na:1.6.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.6.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) ~[na:1.6.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) ~[na:1.6.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:597) ~[na:1.6.0_65]
+	at org.apache.commons.httpclient.protocol.ReflectionSocketFactory.createSocket(ReflectionSocketFactory.java:140) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:125) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:201) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:03:27.994 [ERROR] [org.apache.commons.httpclient.methods.multipart.MultipartRequestEntity] - An exception occurred while getting the length of the parts
+java.lang.NullPointerException: null
+	at org.apache.commons.httpclient.methods.multipart.Part.getLengthOfParts(Part.java:425) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.methods.multipart.MultipartRequestEntity.getContentLength(MultipartRequestEntity.java:172) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.getRequestContentLength(EntityEnclosingMethod.java:336) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.addContentLengthRequestHeader(EntityEnclosingMethod.java:406) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.addRequestHeaders(EntityEnclosingMethod.java:374) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.writeRequestHeaders(HttpMethodBase.java:2177) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.writeRequest(HttpMethodBase.java:2060) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1096) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) [commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:197) [classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:03:27.997 [ERROR] [org.apache.commons.httpclient.methods.multipart.MultipartRequestEntity] - An exception occurred while getting the length of the parts
+java.lang.NullPointerException: null
+	at org.apache.commons.httpclient.methods.multipart.Part.getLengthOfParts(Part.java:425) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.methods.multipart.MultipartRequestEntity.getContentLength(MultipartRequestEntity.java:172) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.getRequestContentLength(EntityEnclosingMethod.java:336) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.writeRequestBody(EntityEnclosingMethod.java:484) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.writeRequest(HttpMethodBase.java:2114) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1096) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) [commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) [commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:197) [classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:03:28.000 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.lang.NullPointerException: null
+	at org.apache.commons.httpclient.methods.multipart.Part.sendParts(Part.java:384) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.methods.multipart.MultipartRequestEntity.writeRequest(MultipartRequestEntity.java:164) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.writeRequestBody(EntityEnclosingMethod.java:499) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.writeRequest(HttpMethodBase.java:2114) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1096) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:197) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:09:14.943 [INFO] [com.mogujie.ares.lib.net.MoguHttp] - org.apache.commons.httpclient.methods.multipart.MultipartRequestEntity@487a1576
+14:17:04.928 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237) ~[na:1.6.0_65]
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:197) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:17:04.937 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:17:04.941 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:17:04.981 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.6.0_65]
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:382) ~[na:1.6.0_65]
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:241) ~[na:1.6.0_65]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:228) ~[na:1.6.0_65]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:431) ~[na:1.6.0_65]
+	at java.net.Socket.connect(Socket.java:527) ~[na:1.6.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.6.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) ~[na:1.6.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) ~[na:1.6.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:597) ~[na:1.6.0_65]
+	at org.apache.commons.httpclient.protocol.ReflectionSocketFactory.createSocket(ReflectionSocketFactory.java:140) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:125) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:197) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:18:25.571 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:18:25.576 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:18:29.008 [INFO] [com.mogujie.ares.lib.net.MoguHttp] - {"error_code":0,"error_msg": "成功","path":"MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE1NTA4ODEwNTA4XzE0MDczNzMzNzkzNV9rbi5qcGc=_kn.jpg","url":"http://122.225.68.125:8001/MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE1NTA4ODEwNTA4XzE0MDczNzMzNzkzNV9rbi5qcGc=_kn.jpg"}
+14:18:29.470 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:203) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:27:19.001 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:27:19.006 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:27:27.991 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237) ~[na:1.6.0_65]
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:198) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:29:51.803 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:29:51.808 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:32:24.158 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:32:24.159 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:32:27.280 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237) ~[na:1.6.0_65]
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:198) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:33:56.720 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:33:56.725 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:42:46.813 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:42:46.818 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:43:19.405 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218) ~[na:1.6.0_65]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237) ~[na:1.6.0_65]
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397) ~[commons-httpclient-3.1.jar:na]
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323) ~[commons-httpclient-3.1.jar:na]
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:198) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:43:57.005 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - I/O exception (org.apache.commons.httpclient.NoHttpResponseException) caught when processing request: The server 122.225.68.125 failed to respond
+14:43:57.010 [INFO] [org.apache.commons.httpclient.HttpMethodDirector] - Retrying request
+14:44:05.447 [INFO] [com.mogujie.ares.lib.net.MoguHttp] - {"error_code":0,"error_msg": "成功","path":"MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE3MDQ1MjQ2NTUxXzE0MDczNzMzNzkzNV9hYWEuYXVkaW8=_aaa.audio","url":"http://122.225.68.125:8001/MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE3MDQ1MjQ2NTUxXzE0MDczNzMzNzkzNV9hYWEuYXVkaW8=_aaa.audio"}
+14:44:05.664 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:205) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:54:10.817 [INFO] [com.mogujie.ares.lib.net.MoguHttp] - {"error_code":0,"error_msg": "成功","path":"MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE3NjUwNjE1ODY0XzEzOTc3OTkyNjQ0N19hYWEuYXVkaW8=_aaa.audio","url":"http://122.225.68.125:8001/MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE3NjUwNjE1ODY0XzEzOTc3OTkyNjQ0N19hYWEuYXVkaW8=_aaa.audio"}
+14:54:11.026 [ERROR] [com.mogujie.ares.lib.net.MoguHttp] - 
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at com.mogujie.ares.lib.net.MoguHttp.uploadAudioByteFile(MoguHttp.java:206) ~[classes/:na]
+	at com.mogujie.ares.lib.net.Test.main(Test.java:8) [classes/:na]
+14:55:13.562 [INFO] [com.mogujie.ares.lib.net.MoguHttp] - {"error_code":0,"error_msg": "成功","path":"MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE3NzEzMDk3NjA4XzEzOTc3OTkyNjQ0N19hYWEuYXVkaW8=_aaa.audio","url":"http://122.225.68.125:8001/MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE3NzEzMDk3NjA4XzEzOTc3OTkyNjQ0N19hYWEuYXVkaW8=_aaa.audio"}
+15:00:54.178 [INFO] [com.mogujie.ares.lib.net.MoguHttp] - {"error_code":0,"error_msg": "成功","path":"MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE4MDUzOTcyNTE0XzEzOTc3OTkyNjQ0N19hYWEuYXVkaW8=_aaa.audio","url":"http://122.225.68.125:8001/MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE4MDUzOTcyNTE0XzEzOTc3OTkyNjQ0N19hYWEuYXVkaW8=_aaa.audio"}
+15:03:17.477 [INFO] [com.mogujie.ares.lib.net.MoguHttp] - {"error_code":0,"error_msg": "成功","path":"MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE4MTk3MjcxNzc3XzEzOTc3OTkyNjQ0N19hYWEuYXVkaW8=_aaa.audio","url":"http://122.225.68.125:8001/MTIyLjIyNS42OC4xMjU7MTAxLjY4LjIxOC4xMjU7MTkyLjE2OC4yLjc0Ly9ob21lL2xhbmh1L21zZnMvcnVuL3RtcC8vMDAwLzAwMC8xNDA4NTE4MTk3MjcxNzc3XzEzOTc3OTkyNjQ0N19hYWEuYXVkaW8=_aaa.audio"}
