@@ -33,17 +33,17 @@ public class BizConstants {
     public static final String GROUP_INFO_DEFAULT_AVATAR = "/avatar/group_avatar_default.jpg"; // 默认群组头像
     
 	// URL
-	public static final String URL_FILE_UPLOAD = "http://192.168.2.74:8001/"; // 上传文件
+	public static final String URL_FILE_UPLOAD = "http://1.1.1.1:1/"; // 上传文件
 	
-	public static final String URL_FILE_DOWNLOAD = "http://192.168.2.74:8001/"; // 下载文件
+	public static final String URL_FILE_DOWNLOAD = "http://1.1.1.1:1/"; // 下载文件
 
     // ---------------- 消息 -------------------
     // 消息里图片的占位符
-    public static final String MESSAGE_IMAGE_PREFIX = "&$#@~^@[{:";
-    public static final String MESSAGE_IMAGE_SUFFIX = ":}]&$~@#@";
+    public static final String MESSAGE_IMAGE_PREFIX = "image_prefix_&%@##@%*^$%{:{}}";
+    public static final String MESSAGE_IMAGE_SUFFIX = "image_suffix_*^&%#{:{}}";
     public static final String Message_IMAGE_URL_REGEX = "(http://)?s\\d{1,2}";
     public static final String MESSAGE_IMAGE_FULL_PLACEHOLDER_REGEX = "(&\\$#@~\\^@\\[\\{:)"
-            + "((http[s]?://)?s\\d{1,2}\\.mogujie\\.(com|cn))(/pic/\\d{6}/[0-9a-z_]{30,40}\\d{1,10}x\\d{1,10}.*"
+            + "((http[s]?://)?s\\d{1,2}\\.ttim\\.(org))(/pic/\\d{6}/[0-9a-z_]{30,40}\\d{1,10}x\\d{1,10}.*"
             + ":\\}\\]&\\$~@#@)"; // 图片占位符的正则表达式
     public static final String MESSAGE_IMAGE_PART_PLACEHOLDER_REGEX = "(&\\$#@~\\^@\\[\\{:)"
             + "(/pic/\\d{6}/[0-9a-z_]{30,40}\\d{1,10}x\\d{1,10}.*"

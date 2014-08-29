@@ -300,8 +300,4 @@ public class MoguHttp {
 		return bytes;
 	}
 	
-//	public static void main() {
-//		String strttt = "2345678954324567889765";
-//		uploadAudioByteFile("http://192.168.2.74:8001/", strttt.getBytes());
-//	}
 }
